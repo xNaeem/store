@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    ::selection {
+      background-color: #ffffff;
+      color: rgb(0, 117, 255);
+    }
+}
+/* <!-- HEADER OF THE WEBSITE --> */
+.div-header {
+    background-color: rgb(0, 117, 255);
+    height: 500px;
+
+}
+#ul-web {
+    background: #03329f;
+    color: aliceblue;
+    text-align: right;
+    font-size: 14px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right:10px;
+    font-family: 'Harmattan', sans-serif;
+    font-family: 'Marhey', cursive;
+}
+.ah{
+  background: none;
+  
+}
+h1 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 70px;
+    color: aliceblue;
+}
+#p1 {
+    text-align: center;
+    padding-top: 60px;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: aliceblue;
+}
+/* <!-- HEADER OF THE WEBSITE END --> */
+/* <!-- SECTION OF THE WEBSITE --> */
+h2{
+  display: flex;
+  font-family: 'Marhey', cursive;
+  font-size: 50px;
+  justify-content: center;
+  margin: 80px;
+}
+.products {
+    background: rgb(0, 117, 255);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    box-shadow:rgba(20, 40, 0, 0.23);
+    position: relative;
+    top: 9px;
+}
+h3 {
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    padding-top: 10px;
+}
+.product1 {
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .4s;
+    background: #f2f2f2;
+}
+.product1:hover{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, -8px);
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+h6{
+    font-size: 30px;
+    padding: 10px;
+}
+a {
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+    color: rgb(255, 255, 255);
+    background-color: #03329f;
+    cursor: pointer;
+    transition: 0.2s;
+    position: relative;
+    border-radius: 20px;
+}
+#ul-web:hover{
+  color:rgb(0, 117, 255);
+}
+a:hover{
+  color:rgb(0, 117, 255);
+}
+h4{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+/* .para{
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: rgb(0, 117, 255);
+} */
+.para {
+    margin: 10px auto;
+    width: 40%;
+    color: rgb(255, 255, 255);
+    counter-reset: head;
+    color: rgb(255, 255, 255);
+  }
+  .para p {
+    border-top: 2px solid;
+    border-image: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+    border-image-slice: 1;
+    padding: 30px 322px;
+    position: relative;
+  }
+  /* .para p::before {
+    position: absolute;
+    counter-increment: head;
+    content: counters(head, ".") " ";
+    top: 40%;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    background-image: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+    text-align: center;
+    line-height: 2;
+    transform: translate(-50%) rotateZ(45deg);
+  } */
+  .para p:nth-child(odd) {
+    border-right: 2px solid;
+  }
+  .para p:nth-child(even) {
+    border-left: 2px solid;
+  }
+  .para p:first-child {
+    border-top: 0;
+  }
+  .para p:nth-child(odd)::before {
+    left: 100%;
+  }
+
+span{
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+.parabg{
+    background: linear-gradient(to top, #03329f 0%, rgb(0, 117, 255) 100%);
+    position: relative;
+    top: 11px;
+}
+/* Waves */
+.waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+    background-color: #03329f;
+    bottom: 25px;
+    margin: 0;
+  }
+  .parf{
+    color: rgb(0, 117, 255);
+    position: relative;
+    top: 40px;
+  }
+  .content {
+    position:relative;
+    height:15vh;
+    text-align:center;
+    background-color: #ffffff;
+  }
+
+  /* Animation */
+  
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+    .content {
+      height:30vh;
+    }
+    h1 {
+      font-size:24px;
+    }
+  }
+
+
+/* contact us */
+
+
+.con-us{
+  background-color: #03329f;
+}
+.contact {
+  font-family: 'Poppins', sans-serif, 'arial';
+  font-weight: 600;
+  font-size: 72px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.رسالتنا {
+  font-family: 'Roboto', sans-serif, 'arial';
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 3;
+}
+/* contact us */
+
+/* contact us end */
+.who-us {
+  position: relative;
+  left: 571px;
+  top: 30px;
+}
+.line{
+  position: relative;
+  top: 10px;
+  text-align: center;
+  border: #03329f solid 20px;
+  border-radius: 0px;
+  padding: 20px;
+  background-color:#03329f;
+}
+h2{
+  background: #03329f;
+  color: aliceblue;
+  margin-top: 1px;
+  padding: 40px;
+  margin: 1px;
+  margin-bottom: -8px;
+}
+.num{
+  font-size: 25px;
+  color: #f2f2f2;
+  position: relative;
+  bottom: 10px;
+  text-align: center;
+  padding: 20px;
+}
+@media (max-width: 1400px) {
+  .product{
+    width: 100%;
+  }
+  img{
+    width: 100%;
+  }
+  .para p{
+    width: 100%;
+    padding: 50px;
+  }
+  .para{
+    width: 100%;
+  }
+  .submit-btn{
+    padding: 20px;
+    width: 190px;
+  }
+  #ul-web{
+    padding-right: 1px;
+    font-size: 12px;
+  }
+  h1{
+    font-size: 30px;
+    margin-bottom: -40px;
+  }
+  .who-us{
+    position: relative;
+    right: 0px;
+  }
+  h2{
+    font-size: 37px;
+  }
+  .contact{
+    font-size: 50px;
+    position: relative;
+    bottom: 40px;
+  }
+  .product1{
+    display: flex;
+    flex-direction:column;
+    width: 300px;
+  }
+  .img{
+    width: fit-content;
+    height: fit-content;
+  }
+  a{
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
